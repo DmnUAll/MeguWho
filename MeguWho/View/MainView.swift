@@ -9,11 +9,11 @@ final class MainView: UIView {
     }()
 
     private lazy var topPlateImageView: UIImageView = {
-        makeImageView(withImage: "board")
+        makeImageView(withImage: UIImage(named: "board"))
     }()
 
     private lazy var perimeterImageView: UIImageView = {
-        makeImageView(withImage: "perimeter")
+        makeImageView(withImage: UIImage(named: "perimeter"))
     }()
 
     lazy var resultImageView: UIImageView = {
@@ -25,7 +25,7 @@ final class MainView: UIView {
     }()
 
     private lazy var bottomPlateImageView: UIImageView = {
-        makeImageView(withImage: "board2")
+        makeImageView(withImage: UIImage(named: "board2"))
     }()
 
     override init(frame: CGRect) {
@@ -89,10 +89,10 @@ extension MainView {
         return label
     }
 
-    private func makeImageView(withImage imageName: String = "") -> UIImageView {
+    private func makeImageView(withImage image: UIImage? = nil) -> UIImageView {
         let imageView = UIImageView()
         imageView.toAutolayout()
-        guard let image = UIImage(named: imageName) else { return imageView }
+        guard let image = image else { return imageView }
         imageView.image = image
         imageView.contentMode = .scaleToFill
         return imageView

@@ -20,10 +20,7 @@ extension MainPresenter {
     func fireTimer() {
         timer = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { [weak self] _ in
             guard let self = self else { return }
-            guard let image = self.imageSet.images.values.randomElement() else {
-                print("error")
-                return
-            }
+            guard let image = self.imageSet.images.values.randomElement() else { return }
             self.viewController?.mainView.resultImageView.image = image
         }
         timer?.fire()
