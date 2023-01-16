@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  MeguWho
-//
-//  Created by Илья Валито on 28.08.2021.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
