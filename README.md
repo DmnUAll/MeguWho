@@ -5,7 +5,6 @@
 <img src="https://user-images.githubusercontent.com/82824022/211196413-66daa753-e764-4656-8ecf-8c9970fd476c.PNG" width=30% height=30%>  <img src="https://user-images.githubusercontent.com/82824022/211196419-b4e294e6-a012-4e55-910d-38bcb0aeec29.PNG" width=30% height=30%>
 </p>
 
-This project was the seventh app writen by myself.\
 The main functionality that was applied in this project:
 - Timer
 - UITapGestureRecognizer
